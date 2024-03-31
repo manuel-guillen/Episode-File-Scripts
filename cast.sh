@@ -22,4 +22,4 @@ fi
 
 # Open the file in VLC
 echo "Opening $file_path in VLC..."
-vlc --quiet -I rc "$file_path" --sout "#chromecast" --sout-chromecast-ip=$TV_IP --demux-filter=demux_chromecast
+exec vlc --quiet -I rc "$file_path" --sout "#chromecast" --sout-chromecast-ip=$TV_IP --demux-filter=demux_chromecast
